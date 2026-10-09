@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Exit-9B/MCM-Helper/main/docs/config.schema.json",
+	"modName": "SexExpPlus",
+	"displayName": "Sex Grants Experience Plus",
+	"minMcmVersion": 13,
+	"cursorFillMode": "leftToRight",
+	"content": [
+		{ "type": "header", "text": "Scope" },
+		{ "id": "bEnabled:Main", "text": "Mod enabled", "type": "toggle", "valueOptions": { "sourceType": "ModSettingBool" } },
+		{ "id": "bSoloScenes:Main", "text": "Solo scenes grant EXP", "type": "toggle", "valueOptions": { "sourceType": "ModSettingBool" } },
+		{ "id": "bRequireOrgasm:Main", "text": "Require an orgasm", "type": "toggle", "valueOptions": { "sourceType": "ModSettingBool" } },
+		{ "id": "bCooldownEnabled:Main", "text": "Cooldown between rewards", "type": "toggle", "valueOptions": { "sourceType": "ModSettingBool" } },
+		{ "id": "fCooldownHours:Main", "text": "Cooldown hours", "type": "slider", "valueOptions": { "sourceType": "ModSettingFloat", "min": 0, "max": 48, "step": 1, "formatString": "{0}" } },
+
+		{ "type": "header", "text": "Amounts" },
+		{ "id": "iNoMatchExp:Main", "text": "No match EXP", "type": "slider", "valueOptions": { "sourceType": "ModSettingInt", "min": 0, "max": 100, "step": 1, "formatString": "{0}" } },
+		{ "id": "fCreatureBonus:Main", "text": "Creature bonus", "type": "slider", "valueOptions": { "sourceType": "ModSettingFloat", "min": 0, "max": 1, "step": 0.01, "formatString": "{2}" } },
+		{ "id": "fActorBonus:Main", "text": "Per actor bonus", "type": "slider", "valueOptions": { "sourceType": "ModSettingFloat", "min": 0, "max": 2, "step": 0.01, "formatString": "{2}" } },
+		{ "id": "iActorThreshold:Main", "text": "Per actor threshold", "type": "slider", "valueOptions": { "sourceType": "ModSettingInt", "min": 1, "max": 10, "step": 1, "formatString": "{0}" } },
+		{ "id": "iActorBehaviour:Main", "text": "Per actor behaviour (0 all, 1 without player, 2 at/above threshold)", "type": "stepper", "valueOptions": { "sourceType": "ModSettingInt", "min": 0, "max": 2, "step": 1 } },
+
+		{ "type": "header", "text": "EXP loss when the player is a victim" },
+		{ "id": "bExpLoss:Main", "text": "EXP loss", "type": "toggle", "valueOptions": { "sourceType": "ModSettingBool" } },
+		{ "id": "bExpLossNegative:Main", "text": "Allow negative EXP", "type": "toggle", "valueOptions": { "sourceType": "ModSettingBool" } },
+		{ "id": "fExpLossMultiplier:Main", "text": "EXP loss multiplier", "type": "slider", "valueOptions": { "sourceType": "ModSettingFloat", "min": 0, "max": 10, "step": 0.1, "formatString": "{1}" } },
+
+		{ "type": "header", "text": "Debug" },
+		{ "id": "bLogConsole:Main", "text": "Messages to console", "type": "toggle", "valueOptions": { "sourceType": "ModSettingBool" } },
+		{ "id": "bLogNotifications:Main", "text": "Messages as notifications", "type": "toggle", "valueOptions": { "sourceType": "ModSettingBool" } },
+		{ "id": "bLogTagMatches:Main", "text": "Log scene tags and their value", "type": "toggle", "valueOptions": { "sourceType": "ModSettingBool" } }
+	]
+}
