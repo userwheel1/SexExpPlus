@@ -47,7 +47,7 @@ The `.psc` files in `Source/Scripts` are Papyrus source. Compiling them produces
 Install the Skyrim Creation Kit compiler and make sure the compiler can find the source headers for Skyrim, SKSE, JContainers, PapyrusUtil, SexLab, OStim, and MCM Helper. The exact import directories depend on where those headers are installed. From the repository root, adapt and run this PowerShell example:
 
 ```powershell
-$Skyrim = 'C:\Path\To\Skyrim Special Edition'
+$Skyrim = 'E:\Path\To\Skyrim Special Edition'
 $Repo = (Get-Location).Path
 $Compiler = Join-Path $Skyrim 'Papyrus Compiler\PapyrusCompiler.exe'
 $Flags = Join-Path $Skyrim 'Papyrus Compiler\TESV_Papyrus_Flags.flg'
