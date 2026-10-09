@@ -72,7 +72,7 @@ For a Papyrus compiler option reference, see the [Skyrim Papyrus Compiler Refere
 
 ## Testing
 
-Tested with the [Merethic modlist](https://github.com/iAmMe27/Merethic) and SexLab Framework P+ 2.17.0 NG. The Steam installation required by Merethic was Skyrim 1.7.99; the runtime used for the test was Skyrim 1.6.1170.0 with SKSE 2.2.6.
+Tested with the [Merethic modlist](https://github.com/iAmMe27/Merethic) and [SexLab Framework P+ 2.17.0 NG](https://www.loverslab.com/files/file/25318-sexlab-p/). The Steam installation required by Merethic was Skyrim 1.7.99; the runtime used for the test was Skyrim 1.6.1170.0 with SKSE 2.2.6.
 
 ## Credits
 
